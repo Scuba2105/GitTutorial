@@ -10,7 +10,7 @@
         <body>
             <h1>Push a New Project to GitHub</h1>
             <h3>Introduction</h3>
-            <p>This tutorial is aimed at improving knowledge of git and GitHub whilst also gaining more expeience at web development. By the end of this tutorial you will have learned how to create a new GitHub remote repository and how to push an existing project to this remote repo</p> 
+            <p>This tutorial is aimed at improving knowledge of git and GitHub whilst also gaining more expeience at web development. By the end of this tutorial you will have learned how to create a new GitHub remote repository and how to push an existing project to this remote repo.</p> 
             <h2>Step 1- Create a new GitHub Repository</h2>
             <p>Sign in to GitHub and click the plus sign dropdown in the top right corner. Select the option to create a new repository. See below screenshot for the form that must be completed to create the new repository</p>
             <div class="img-div">
@@ -26,9 +26,21 @@
             <p class="terminal">$ <span class="git">git add</span> -A</p>
             <p>The <span id="argument" class="terminal">-A</span> argument tells git to stage all files for the next commit.</p>
             <p class="terminal">$ <span class="git">git add</span> .</p>
-            <p>The <span class="">.</span> argument tells git to stage all changes in the root directory for the next commit.</p>
+            <p>The <span id="all-directory" class="terminal">.</span> argument tells git to stage all changes in the root directory for the next commit.</p>
             <p class="terminal">$ <span class="git">git add</span> <span class="file">"file"</span></p>
-            <p>The <span class="file">"file"</span> argument tells git to stage the named file/s for the next commit.</p>
-        </body>
+            <p>The <span class="file terminal">"file"</span> argument tells git to stage the named file/s for the next commit.</p>
+            <h2>Step 4- Commit the Added Files</h2>
+            <p>The git commit command captures a snapshot of the projects currently staged changes and is considered a save point. It is a point in the project where you can go back for debugging purposes or to make a change. You should always include messages using the -m argument and an appropriate message a shown below.</p>
+            <p class="terminal">$ <span class="git">git commit</span> -m <span id="message">"Added project to new repository"</span></p>
+            <h2>Step 5- Add a New Remote Origin</h2>
+            <p>In git, a remote refers to a remote version of the repository which is typically stored on a server somewhere. GitHub is the most prominent example of this remote server. Origin just refers to the default name for the remote server as there can be multiple. The command shown below adds the URL of the remote server for this repo. This is where you need to know your GitHUB username and the name of the repo you are pushing this project to.</p>
+            <p class="terminal">$ <span class="git">git remote add origin</span> git@github.com:<span class="username"> username/new-repo-name</span></p>
+            <p class="note">Note: You will need to replace the orange highlighted parts with the username and repo name details for your project.</p>
+            <p>Alternatively, instead of noting the username and repo name you can just copy the link in the repo. The link can be found by selecting the green "code" button and pressing the copy button next to the link. See the below image for clarification.</p>
+            <div class="img-div">
+                <img id="copy-repo-link" src="images/CopyRepoLink.png" alt="Copy remote repo link">
+            </div>
+            
+            </body>
     </main>
 </html>

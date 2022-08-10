@@ -42,9 +42,10 @@ p {
 .terminal {
     margin-top: 30px;
     padding: 20px;
-    background-color: rgb(159, 175, 245);
+    background-color: rgb(209, 198, 245);
     color: rgb(2, 20, 99);
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .note {
@@ -55,10 +56,22 @@ p {
     border-radius: 10px;
 }
 
-#argument {
+#argument, #all-directory, .file {
     margin-top: 0 !important;
     padding: 3px !important;
-    border-radius: 
+    border-radius: 3px;
+}
+
+.git {
+    color:rgb(227, 20, 179);
+}
+
+.file {
+    color: rgb(252, 148, 3);
+}
+
+#message {
+    color:rgb(5, 168, 89);
 }
 
 
