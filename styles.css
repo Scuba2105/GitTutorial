@@ -1,7 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(61, 61, 61);
-    color: rgb(237, 235, 235);
+    background-color: white;
+    color: black;
 }
 
 h1 {
@@ -14,7 +14,7 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center; 
-    margin-top: 40px;   
+    margin: 40px auto 0 auto;  
 }
 
 h2, h3 {
@@ -26,9 +26,11 @@ h2 {
 }
 
 p {
+    font-size: 21px;
     width: 70%;
     margin-left: 15%;
     letter-spacing: 1.5px;
+    line-height: 150%;
 }
 
 .warning {
@@ -42,8 +44,8 @@ p {
 .terminal {
     margin-top: 30px;
     padding: 20px;
-    background-color: rgb(209, 198, 245);
-    color: rgb(2, 20, 99);
+    background-color: rgb(6, 6, 7);
+    color: rgb(111, 136, 247);
     border-radius: 10px;
     font-weight: bold;
 }
@@ -56,14 +58,14 @@ p {
     border-radius: 10px;
 }
 
-#argument, #all-directory, .file {
+#argument, #all-directory, .file, #force, #upstream {
     margin-top: 0 !important;
     padding: 3px !important;
     border-radius: 3px;
 }
 
 .git {
-    color:rgb(227, 20, 179);
+    color:rgb(241, 125, 214);
 }
 
 .file {
@@ -74,4 +76,23 @@ p {
     color:rgb(5, 168, 89);
 }
 
+#note-two {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+img {
+    border-style: solid;
+    border-color: rgb(130, 131, 133);
+    border-width: 3px;
+}
+
+.username {
+    background-color:rgb(230, 192, 136);
+    border-radius: 3px;
+    color:rgb(128, 76, 5)
+}
 

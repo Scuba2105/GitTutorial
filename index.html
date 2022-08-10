@@ -44,11 +44,17 @@
                 <h2>Step 5- Add a New Remote Origin</h2>
                 <p>In git, a remote refers to a remote version of the repository which is typically stored on a server somewhere. GitHub is the most prominent example of this remote server. Origin just refers to the default name for the remote server as there can be multiple. The command shown below adds the URL of the remote server for this repo. This is where you need to know your GitHUB username and the name of the repo you are pushing this project to.</p>
                 <p class="terminal">$ <span class="git">git remote add origin</span> git@github.com:<span class="username"> username/new-repo-name</span></p>
-                <p class="note">Note: You will need to replace the orange highlighted parts with the username and repo name details for your project.</p>
+                <p id="note-two" class="note">Note: You will need to replace the orange highlighted parts with the username and repo name details for your project.</p>
                 <p>Alternatively, instead of noting the username and repo name you can just copy the link in the repo. The link can be found by selecting the green "code" button and pressing the copy button next to the link. See the below image for clarification.</p>
                 <div class="img-div">
                     <img id="copy-repo-link" src="images/CopyRepoLink.png" alt="Copy remote repo link">
                 </div>
+            </section>
+            <section>
+                <h2>Step 6- Push to GitHub</h2>
+                <p>This step can be carried out by entering the following command at the terminal.</p>
+                <p class="terminal">$ <span class="git">git push </span>-u -f origin main</p>
+                <p>The <span id="upstream" class="terminal">-u</span> argument sets the remote origin as the upstream reference. This allows all future push and pull commands to be performed without specifying the origin. The <span id="force" class="terminal">-f</span> argument stands for force and automatically overwrites everything in the remote repository.</p>
             </section>
             </body>
     </main>
