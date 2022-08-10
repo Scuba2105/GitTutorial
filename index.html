@@ -10,14 +10,25 @@
         <body>
             <h1>Push a New Project to GitHub</h1>
             <h3>Introduction</h3>
-            <p>This tutorial is aimed at improving my knowledge of git and GitHub whilst also gaining more expeience at web development. By the end of this tutorial I will have learned how to create a new GitHub remote repository and how to push an existing project to this remote repo</p> 
+            <p>This tutorial is aimed at improving knowledge of git and GitHub whilst also gaining more expeience at web development. By the end of this tutorial you will have learned how to create a new GitHub remote repository and how to push an existing project to this remote repo</p> 
             <h2>Step 1- Create a new GitHub Repository</h2>
             <p>Sign in to GitHub and click the plus sign dropdown in the top right corner. Select the option to create a new repository. See below screenshot for the form that must be completed to create the new repository</p>
-            <img src="images/CreateNewRepo.png" alt="Create New GitHub Repo Screenshot">
-            <p class="warning">It is important to make note of my GitHub username and the name given to the repository as it is required in later steps.</p>
+            <div class="img-div">
+                <img id="create-repo" src="images/CreateNewRepo.png" alt="Create New GitHub Repo Screenshot">
+            </div>
+            <p class="warning">IMPORTANT! You must make note of your GitHub username and the name given to the repository as it is required in later steps.</p>
             <h2>Step 2- Initialise Git in the Project Folder</h2>
             <p>You must first be in the root directory for the project you wish to push to GitHub. This step creates a hidden .git directory in the project folder which the git software recognises and uses to store all meta data and version history. Once is the root directory enter the following command at the terminal:</p>
-            <p class="note">If you have already initialised a Git repository for this project you can skip this step.</p>            
+            <p class="note">Note: If you have already initialised a Git repository for this project you can skip this step.</p> 
+            <p class="terminal">$ <span class="git">git</span> init</p>
+            <h2>Step 3- Add the Files to Git Staging Area</h2>
+            <p>The git add command adds the specified files to the git staging area ready to be committed. There are different available arguments to use for this step outlined below.</p>           
+            <p class="terminal">$ <span class="git">git add</span> -A</p>
+            <p>The <span class="">-A</span> argument tells git to stage all files for the next commit.</p>
+            <p class="terminal">$ <span class="git">git add</span> .</p>
+            <p>The <span class="">.</span> argument tells git to stage all changes in the root directory for the next commit.</p>
+            <p class="terminal">$ <span class="git">git add</span> <span class="file">"file"</span></p>
+            <p>The <span class="file">"file"</span> argument tells git to stage the named file/s for the next commit.</p>
         </body>
     </main>
 </html>
